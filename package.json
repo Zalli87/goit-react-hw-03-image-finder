@@ -1,6 +1,6 @@
 {
   "name": "goit-react-hw-03-image-finder",
-  "homepage": "https://Zalli87.github.io/goit-js-hw-13-image-finder",
+  "homepage": "https://Zalli87.github.io/goit-react-hw-03-image-finder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
   "eslintConfig": {
