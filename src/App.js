@@ -1,23 +1,26 @@
 import React, { Component } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import './App.css';
-import Searchbar from './components/Searchbar/Searchbar'
+import SearchForm from './components/SearchForm/SearchForm'
+import SearchInfo from './components/SearchInfo/SearchInfo'
 
 class App extends Component {
   state = {
-   query: '',
+   imageQuery: '',
   }
 
-  handlFormSubmit = query => {
-    this.setState({ query });
+  handlFormSubmit = imageQuery => {
+    this.setState({ imageQuery });
   }
 
   
   render() {
   return (
     <div>
-      <Searchbar onSubmit={this.handlFormSubmit} />
+      <SearchForm onSubmit={this.handlFormSubmit} />
+      <SearchInfo imageQuery={this.state.imageQuery} />
     <ToastContainer />
     </div>
     );
