@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import pixabayAPI from '../../serveses/pixabay-api';
-import ImageGallery from '../ImageGallery/ImageGallery';
-import Button from '../Button';
-import Loader from "react-loader-spinner";
 import PropTypes from 'prop-types';
+import Loader from "react-loader-spinner";
+import pixabayAPI from '../../serveses/pixabay-api';
+import ImageGallery from '../ImageGallery';
+import Button from '../Button';
+
+
 
 export default class SearchInfo extends Component {
 

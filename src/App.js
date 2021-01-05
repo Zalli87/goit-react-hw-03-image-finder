@@ -3,8 +3,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import './App.css';
-import SearchForm from './components/SearchForm/SearchForm'
-import SearchInfo from './components/SearchInfo/SearchInfo'
+import SearchForm from './components/SearchForm'
+import SearchInfo from './components/SearchInfo'
 
 class App extends Component {
   state = {

@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types';
-import s from './SearchForm.module.css';
 import React, { Component } from 'react';
 import { toast } from 'react-toastify';
+import PropTypes from 'prop-types';
+import s from './SearchForm.module.css';
+
 
 class SearchForm extends Component {
     state = {
