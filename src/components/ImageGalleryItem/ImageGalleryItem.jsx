@@ -13,5 +13,7 @@ import css from './ImageGalleryItem.module.css'
 }
 
 ImageGalleryItem.propTypes = {
-    webformatURL: PropTypes.string.isRequired
+    webformatURL: PropTypes.string.isRequired,
+    largeImageURL: PropTypes.string.isRequired,
+    showLargeImg: PropTypes.func.isRequired
 }

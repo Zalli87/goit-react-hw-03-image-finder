@@ -17,8 +17,11 @@ export class App extends Component {
     largeImg: '',
   }
 
-  searchImage = ({search}) => {
-    this.setState({search, items:[], page:1}) 
+  searchImage = ({ search }) => {
+    if(this.state.search !== search){
+      this.setState({ search, items: [], page: 1 })
+    } else{alert('Enter new query')}
+
   }
 
   loadMore = () => {

@@ -1,4 +1,5 @@
 import css from "./ImageGallery.module.css";
+import PropTypes from "prop-types";
 import { ImageGalleryItem } from "components/ImageGalleryItem/ImageGalleryItem";
 
 
@@ -18,4 +19,13 @@ return(
 
 ImageGallery.defaultProps = {
     items:[],
+}
+
+ImageGallery.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        webformatURL: PropTypes.string.isRequired,
+        largeImageURL: PropTypes.string.isRequired
+    })).isRequired,
+    showLargeImg: PropTypes.func.isRequired
 }

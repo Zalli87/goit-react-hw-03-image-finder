@@ -20,13 +20,6 @@ export class Searchbar extends Component {
         e.preventDefault();
         const { onSubmit } = this.props;
         onSubmit({ ...this.state });
-        this.reset();
-    }
-
-    reset() {
-        this.setState({
-            search: '',
-        })
     }
 
     render() {
@@ -34,12 +27,12 @@ export class Searchbar extends Component {
         const { handleChange, handleSubmit } = this;
         return (
             <>
-                 <header className={css.searchbar}>
-  <form  className={css.searchForm} onSubmit={handleSubmit}>
-    <button type="submit" className={css.searchFormButton}>
-      <AiOutlineSearch/>
+ <header className={css.searchbar}>
+    <form  className={css.searchForm} onSubmit={handleSubmit}>
+     <button type="submit" className={css.searchFormButton}>
+          <AiOutlineSearch/>
       <span className={css.searchFormButtonLabel}></span>
-    </button>
+     </button>
 
     <input
     onChange={handleChange}
